@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # set labels for metadata
-LABEL maintainer="Morven Cao<morvencao@gmail.com>" \
+LABEL maintainer="Morven Cao" \
   name="sidecar-injector" \
   description="A Kubernetes mutating webhook server that implements sidecar injection" \
   summary="A Kubernetes mutating webhook server that implements sidecar injection"
@@ -13,10 +13,6 @@ ENV SIDECAR_INJECTOR=/usr/local/bin/sidecar-injector \
 
 # install sidecar-injector binary
 COPY build/_output/bin/sidecar-injector ${SIDECAR_INJECTOR}
-
-# copy licenses
-RUN mkdir /licenses
-COPY LICENSE /licenses
 
 # set entrypoint
 ENTRYPOINT ["/usr/local/bin/sidecar-injector"]
