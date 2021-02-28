@@ -73,7 +73,6 @@ admissionregistration.k8s.io/v1beta1
 4. Deploy resources:
 
 ```
-# kubectl create -f deployment/nginxconfigmap.yaml
 # kubectl create -f deployment/configmap.yaml
 # kubectl create -f deployment/deployment.yaml
 # kubectl create -f deployment/service.yaml
@@ -107,13 +106,19 @@ kube-system          Active   26m
 sidecar-injector     Active   17m
 ```
 
-3. Deploy an app in Kubernetes cluster, take `alpine` app as an example
+3. Deploy an configmap in Kubernetes cluster
+
+```
+# kubectl apply -f ./deployment/nginxconfigmap.yaml -n injection
+```
+
+4. Deploy an app in Kubernetes cluster, take `alpine` app as an example
 
 ```
 # kubectl run alpine --image=alpine --restart=Never -n injection --overrides='{"apiVersion":"v1","metadata":{"annotations":{"sidecar-injector-webhook.morven.me/inject":"yes"}}}' --command -- sleep infinity
 ```
 
-4. Verify sidecar container is injected:
+5. Verify sidecar container is injected:
 
 ```
 # kubectl get pod -n injection
