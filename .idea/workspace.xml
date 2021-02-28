@@ -27,6 +27,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
+  <component name="RunManager">
+    <configuration name="fmt" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="fmt" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.fmt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -35,6 +48,22 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1611800507787">
+      <screen x="0" y="23" width="1792" height="1048" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1048@0.23.1792.1048" timestamp="1611800507787" />
+    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1611800507787">
+      <screen x="0" y="23" width="1792" height="1048" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1048@0.23.1792.1048" timestamp="1611800507787" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1611800507787">
+      <screen x="0" y="23" width="1792" height="1048" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1048@0.23.1792.1048" timestamp="1611800507787" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1611800507787">
+      <screen x="0" y="23" width="1792" height="1048" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1048@0.23.1792.1048" timestamp="1611800507787" />
     <state x="397" y="210" key="SettingsEditor" timestamp="1607685804406">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
